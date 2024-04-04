@@ -26,9 +26,11 @@ st.sidebar.subheader('', divider='rainbow')
 X = st.sidebar.selectbox("เลือกข้อมูลสำหรับ Training และ Scatter Plot", df[['TV', 'Radio', 'Newspaper']].columns)
 train = st.sidebar.selectbox("เลือกวิธีการประมาณค่าพารามิเตอร์ (Training)", ["Least Squares Approximation", "Gradient Descent"])
 
-# Scatter Plot2Dfig2D = go.Figure()
+# Scatter Plot2D
+st.subheader('', divider='rainbow')
+fig2D = go.Figure()
 if X == "TV":
-    st.write(f"Scatter Plot ระหว่าง {X} กับ Sales")
+    st.subheader(f"Scatter Plot ระหว่าง {X} กับ Sales")
     fig2D.add_trace(go.Scatter(x=df['TV'], y=df['Sales'], mode='markers', name='Data Point'))
     fig2D.update_layout(
         xaxis_title=X + " (X)",
@@ -37,6 +39,7 @@ if X == "TV":
     st.plotly_chart(fig2D)
     
 elif X == "Radio":
+    st.subheader(f"Scatter Plot ระหว่าง {X} กับ Sales")
     fig2D.add_trace(go.Scatter(x=df['Radio'], y=df['Sales'], mode='markers', name='Data Point'))
     fig2D.update_layout(
         xaxis_title=X + " (X)",
@@ -45,6 +48,7 @@ elif X == "Radio":
     st.plotly_chart(fig2D)
 
 elif X == "Newspaper":
+    st.subheader(f"Scatter Plot ระหว่าง {X} กับ Sales")
     fig2D.add_trace(go.Scatter(x=df['Newspaper'], y=df['Sales'], mode='markers', name='Data Point'))
     fig2D.update_layout(
         xaxis_title=X + " (X)",
@@ -110,6 +114,6 @@ elif train == "Gradient Descent":
                 if (i + 1) % round_epochs == 0:
                     pbar.set_description(f'Iterate: {i + 1}, SSE: {sse}')
                     pbar.update(round_epochs)
-    st.write(beta_0, beta_1)
+        approx_done = st.success(f"Intercept: {beta_0}, Slope: {beta_1}")
 
 # print(beta_0, beta_1)
