@@ -1,18 +1,13 @@
-# Name of Streamlit App
+# Prediction using Linear Regression Model
 
-Description of the app ...
+this Web App show data visualization and predictive data
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st-app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://csnu-numerical-method-prediction-regression.streamlit.app/)
 
-## Section Heading
+## Requirements
 
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+About module this app
+- plotly
+- pandas
