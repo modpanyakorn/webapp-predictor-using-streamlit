@@ -9,5 +9,9 @@ this Web App show data visualization and predictive data
 ## Requirements
 
 About module this app
-- plotly
+- streamlit
 - pandas
+- numpy
+- plotly
+- scikit-learn
+- stqdm
