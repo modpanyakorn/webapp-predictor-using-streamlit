@@ -4,7 +4,7 @@ this Web App show data visualization and predictive data
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://csnu-numerical-method-prediction-regression.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bit.ly/CSnumerical)
 
 ## Requirements
 
