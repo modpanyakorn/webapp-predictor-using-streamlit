@@ -1,4 +1,4 @@
-# Prediction using Linear Regression Model
+# Web Application for Prediction and Training Linear Regression Model
 
 this Web App show data visualization and predictive data
 
