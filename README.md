@@ -8,7 +8,7 @@ this Web App show data visualization and predictive data
 
 ## Requirements
 
-About module this app
+About module of this app
 - streamlit
 - pandas
 - numpy
