@@ -59,7 +59,6 @@ elif X == "Newspaper":
     st.plotly_chart(fig2D)
 
 # Approximation Parameters
-#  and button_train == False and train not in ["Least Squares Approximation", "Gradient Descent"]
 print(button_train, train)
 if ['st.session_state.beta_0', 'st.session_state.beta_1', 'st.session_state.beta_0GD', 'st.session_state.beta_1GD'] not in st.session_state and button_train != True and train not in ["Gradient Descent", "Least Squares Approximation"]:
     st.session_state.beta_0 = 0
@@ -154,9 +153,7 @@ elif train == "Gradient Descent":
         st.plotly_chart(fig2D_GD)
 
 print(st.session_state.beta_0, st.session_state.beta_1, st.session_state.beta_0GD, st.session_state.beta_1GD)
-# st.session_state.input_X = 0
-# if st.session_state.input_X == 0:
-#     st.error("for Predict Training First!!")
+
 if train == "Least Squares Approximation" and st.session_state.beta_0 != 0:
     input_X = st.number_input(f'ทำนายยอดขาย Sales จากการลงทุนโฆษณาใน {X}')
     st.warning(f"ทำนายยอดขาย Sales ได้: {round(st.session_state.beta_0 + st.session_state.beta_1 * input_X, 5)}")
